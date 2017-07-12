@@ -1,4 +1,4 @@
-<!-- -*- mode: markdown -* -->-
+<!-- -*- mode: markdown -* -->
 # My various utility functions in R
 
 All function names begin with the prefix `yxl_` (exception: `qq`).
