@@ -2,7 +2,8 @@
 % Please edit documentation in R/yxl_tad.R
 \name{yxl_tad}
 \alias{yxl_tad}
-\title{Use tad as an external data browser.}
+\title{Use tad as an external data browser. tad needs to be installed
+independently}
 \usage{
 yxl_tad(df)
 }
@@ -10,5 +11,6 @@ yxl_tad(df)
 \item{df}{the data.frame to be exported.}
 }
 \description{
-Use tad as an external data browser.
+Use tad as an external data browser. tad needs to be installed
+independently
 }

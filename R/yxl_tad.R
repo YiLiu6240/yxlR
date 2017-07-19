@@ -1,9 +1,10 @@
-#' Use tad as an external data browser.
-#'
-#' @param df the data.frame to be exported.
-#' @export
-
 yxl_tad <- function(df) {
+  #' Use tad as an external data browser. tad needs to be installed
+  #' independently
+  #'
+  #' @param df the data.frame to be exported.
+  #' @export
+
   # Use tad as an external data browser.
   # Need to have tidyverse installed.
   filename <- sprintf("%s.csv", tempfile())
