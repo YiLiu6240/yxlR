@@ -5,10 +5,11 @@ yxl_tad <- function(df) {
   #' @param df the data.frame to be exported.
   #' @export
 
-  # Use tad as an external data browser.
-  # Need to have tidyverse installed.
+  # Write `df` to a temp csv file, and invoke `tad` (specified by `tad_command`)
+  # to open this temp csv file.
+  tad_command <- "tad %s > /dev/null 2>&1 &"
   filename <- sprintf("%s.csv", tempfile())
   readr::write_csv(df, path = sprintf("%s", filename))
-  system(sprintf("tad %s & disown", filename),
+  system(sprintf(tad_command, filename),
          wait = FALSE, ignore.stderr = TRUE, ignore.stdout = TRUE)
 }
