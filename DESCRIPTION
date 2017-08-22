@@ -1,7 +1,7 @@
 Package: yxlR
 Type: Package
 Title: R utility functions by YiLiu6240
-Version: 0.1.0
+Version: 0.1.1
 Author: Yi Liu https://github.com/YiLiu6240
 Maintainer: Yi Liu <yi.liu6240@gmail.com>
 Description: General purposes utility functions
